@@ -1,0 +1,8 @@
+# Personalized-cancer-diagnosis
+Overview of Dataset: Dataset has 9 different classes that we have to predict. Both training and test, datasets are provided into two different files. One (training/test_variants) provides information about the genetic mutation, whereas other (training/test_text) provides the clinical evidence(text) that human experts used to classify the genetic mutations.
+File Descriptions:
+training_variants- a comma-separated file containing the description of the genetic mutations used for training. It has four filed: 1. ID( used to link the mutation to the clinical evidence), 2. Variation(amino acid change for these mutations), 3. Gene (gene where genetic mutations are located, 4.Class(1–9 class this genetic mutation has been classified on)
+training_text- a double pipe(||) delimited file that contains the clinical evidence(text) used to classify genetic mutations. 1. ID (used to link the clinical evidence to the genetic mutation), 2. Text (used to classify the genetic mutation)
+test_variants- a comma-separated file containing the description of the genetic mutations used for training. It has three fields: 1. ID( used to link the mutation to the clinical evidence), 2. Variation(amino acid change for these mutations), 3. Gene (gene where genetic mutations are located.
+test_text- a double pipe(||) delimited file that contains the clinical evidence(text) used to classify genetic mutations. 1. ID (used to link the clinical evidence to the genetic mutation), 2. Text (used to classify the genetic mutation).
+Evaluation- Submissions are evaluated on Multi-Class Log Loss between the predicted probability and the observed target.
